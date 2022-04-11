@@ -62,7 +62,7 @@ if __name__ == '__main__':
 
     menu_str = menu_df.transpose().rename({0: 'Almuerzo', 1: 'Cena'}, axis=1).to_string()
 
-    with open('menu_y_compras-' + datetime.now().strftime("%Y-%m-%d@%H:%M:%S") + '.txt', 'w') as f:
+    with open('menu_y_compras-' + datetime.now().strftime("%d-%m-%Y@%H:%M:%S") + '.txt', 'w') as f:
         print('###### MENU SEMANAL ######', file=f)
         print(menu_str, file=f)
         print('', file=f)
